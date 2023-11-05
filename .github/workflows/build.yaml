@@ -1,0 +1,72 @@
+---
+name: build
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types:
+      - created
+
+jobs:
+  docker:
+    environment: build
+    runs-on: ubuntu-latest
+    steps:
+      # Originally based on:
+      # https://blog.oddbit.com/post/2020-09-25-building-multi-architecture-im/
+      - name: Prepare
+        id: prep
+        run: |
+          SHORTREF=${GITHUB_SHA::7}
+          LATEST=latest
+
+          if [[ $GITHUB_REF_TYPE == "tag" ]]; then
+            VERSION=${GITHUB_REF#refs/tags/}
+          fi
+
+          for image in $DOCKER_IMAGE $GHCR_IMAGE;do
+            for tag in $SHORTREF $VERSION $LATEST;do
+              TAGS=${TAGS}${SEP}${image}:${tag}
+              SEP=","
+            done
+          done
+
+          echo "tags=${TAGS}" >> $GITHUB_OUTPUT
+          echo "docker_image=${DOCKER_IMAGE}" >> $GITHUB_OUTPUT
+        env:
+          DOCKER_IMAGE: ${{ github.repository }}
+          GHCR_IMAGE: ghcr.io/${{ github.repository }}
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v3 
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v5
+        with:
+          builder: ${{ steps.buildx.outputs.name }}
+          platforms: linux/amd64,linux/arm/v7,linux/arm64/v8
+          push: true
+          tags: ${{ steps.prep.outputs.tags }}
+
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
