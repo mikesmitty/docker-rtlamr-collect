@@ -36,8 +36,8 @@ jobs:
           echo "tags=${TAGS}" >> $GITHUB_OUTPUT
           echo "docker_image=${DOCKER_IMAGE}" >> $GITHUB_OUTPUT
         env:
-          DOCKER_IMAGE: ${{ github.repository }}
-          GHCR_IMAGE: ghcr.io/${{ github.repository }}
+          DOCKER_IMAGE: ${{ secrets.DOCKER_USERNAME }}/rtlamr-collect
+          GHCR_IMAGE: ghcr.io/${{ secrets.DOCKER_USERNAME }}/rtlamr-collect
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
