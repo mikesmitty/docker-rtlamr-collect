@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.1...v0.1.2) (2023-11-05)
+
+
+### Bug Fixes
+
+* add rtlsdr server ([#9](https://github.com/mikesmitty/docker-rtlamr-collect/issues/9)) ([6e7b8a8](https://github.com/mikesmitty/docker-rtlamr-collect/commit/6e7b8a8ae2ddd23c09b1f84dc8b4db2053011361))
+
 ## [0.1.1](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.0...v0.1.1) (2023-11-05)
 
 
