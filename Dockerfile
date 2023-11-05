@@ -13,7 +13,7 @@ COPY ./entrypoint.sh /usr/bin/
 RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -o Dpkg::Options::="--force-confnew" -y \
-      mosquitto-clients \
+      rtl-sdr \
       procps \
       psmisc \
     && apt-get --purge autoremove -y \
