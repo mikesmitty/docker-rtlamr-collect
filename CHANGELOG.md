@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.2...v0.1.3) (2023-11-05)
+
+
+### Bug Fixes
+
+* remove rtl-sdr server ([#12](https://github.com/mikesmitty/docker-rtlamr-collect/issues/12)) ([7fe9e30](https://github.com/mikesmitty/docker-rtlamr-collect/commit/7fe9e3027b329bb8882a2a65bd83d040d192ebbd))
+
 ## [0.1.2](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.1...v0.1.2) (2023-11-05)
 
 
