@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.3...v0.1.4) (2023-11-06)
+
+
+### Bug Fixes
+
+* install root ca certificates ([#14](https://github.com/mikesmitty/docker-rtlamr-collect/issues/14)) ([6f369f7](https://github.com/mikesmitty/docker-rtlamr-collect/commit/6f369f73a6c10d2d6e7d77349f78246f81c0d976))
+
 ## [0.1.3](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.2...v0.1.3) (2023-11-05)
 
 
