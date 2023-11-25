@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.4...v0.1.5) (2023-11-25)
+
+
+### Bug Fixes
+
+* prod release-please ([#18](https://github.com/mikesmitty/docker-rtlamr-collect/issues/18)) ([b1ddfd9](https://github.com/mikesmitty/docker-rtlamr-collect/commit/b1ddfd983540530e3c9bee078752092143bd9582))
+
 ## [0.1.4](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.3...v0.1.4) (2023-11-06)
 
 
