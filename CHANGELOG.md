@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.2.0](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v1.1.4...v1.2.0) (2023-12-02)
+
+
+### Features
+
+* initial version ([57a4e3c](https://github.com/mikesmitty/docker-rtlamr-collect/commit/57a4e3c5813bba3e9b73b418e35e3d1973afbb7f))
+
+
+### Bug Fixes
+
+* add rtlsdr server ([#9](https://github.com/mikesmitty/docker-rtlamr-collect/issues/9)) ([6e7b8a8](https://github.com/mikesmitty/docker-rtlamr-collect/commit/6e7b8a8ae2ddd23c09b1f84dc8b4db2053011361))
+* install root ca certificates ([#14](https://github.com/mikesmitty/docker-rtlamr-collect/issues/14)) ([6f369f7](https://github.com/mikesmitty/docker-rtlamr-collect/commit/6f369f73a6c10d2d6e7d77349f78246f81c0d976))
+* prod release-please ([#18](https://github.com/mikesmitty/docker-rtlamr-collect/issues/18)) ([b1ddfd9](https://github.com/mikesmitty/docker-rtlamr-collect/commit/b1ddfd983540530e3c9bee078752092143bd9582))
+* remove rtl-sdr server ([#12](https://github.com/mikesmitty/docker-rtlamr-collect/issues/12)) ([7fe9e30](https://github.com/mikesmitty/docker-rtlamr-collect/commit/7fe9e3027b329bb8882a2a65bd83d040d192ebbd))
+* switch away from mqtt input ([#7](https://github.com/mikesmitty/docker-rtlamr-collect/issues/7)) ([115b5b5](https://github.com/mikesmitty/docker-rtlamr-collect/commit/115b5b5b8422c56c72fd3877e68a56d1da296fb2))
+* update docker image name ([#5](https://github.com/mikesmitty/docker-rtlamr-collect/issues/5)) ([e57769d](https://github.com/mikesmitty/docker-rtlamr-collect/commit/e57769db9c07ba7e1060b82bba85dbbc668fb2aa))
+* update release-please config ([879bda8](https://github.com/mikesmitty/docker-rtlamr-collect/commit/879bda8dcf93276b5cb97c89bb32bd92b609fa57))
+
 ## [0.1.5](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.4...v0.1.5) (2023-11-25)
 
 
