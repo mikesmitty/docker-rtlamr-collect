@@ -1,4 +1,4 @@
-FROM golang:1.23.5-bookworm as go-builder
+FROM golang:1.23.6-bookworm as go-builder
 
 WORKDIR /go/src/app
 
