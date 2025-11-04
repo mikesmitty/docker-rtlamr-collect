@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.29](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.28...v0.1.29) (2025-11-04)
+
+
+### Bug Fixes
+
+* **deps:** Replace google-github-actions/release-please-action action with googleapis/release-please-action v4 ([#69](https://github.com/mikesmitty/docker-rtlamr-collect/issues/69)) ([7af3f94](https://github.com/mikesmitty/docker-rtlamr-collect/commit/7af3f941268bf71e03c5f5024d4e49d356443c3c))
+
 ## [0.1.28](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.27...v0.1.28) (2025-10-18)
 
 
