@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.30](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.29...v0.1.30) (2025-11-09)
+
+
+### Bug Fixes
+
+* **deps:** Update golang Docker tag to v1.25.4 ([#71](https://github.com/mikesmitty/docker-rtlamr-collect/issues/71)) ([571988d](https://github.com/mikesmitty/docker-rtlamr-collect/commit/571988db7e02ffba8f8960956e68a66b09433903))
+
 ## [0.1.29](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.28...v0.1.29) (2025-11-04)
 
 
