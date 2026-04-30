@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.2.0](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.30...v0.2.0) (2026-04-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Update docker/build-push-action action to v7 ([#79](https://github.com/mikesmitty/docker-rtlamr-collect/issues/79))
+* **deps:** Update docker/login-action action to v4 ([#77](https://github.com/mikesmitty/docker-rtlamr-collect/issues/77))
+* **deps:** Update docker/setup-buildx-action action to v4 ([#78](https://github.com/mikesmitty/docker-rtlamr-collect/issues/78))
+* **deps:** Update docker/setup-qemu-action action to v4
+* **deps:** Update googleapis/release-please-action action to v5 ([#81](https://github.com/mikesmitty/docker-rtlamr-collect/issues/81))
+
+### Bug Fixes
+
+* **deps:** Update docker/build-push-action action to v7 ([#79](https://github.com/mikesmitty/docker-rtlamr-collect/issues/79)) ([7bf3d17](https://github.com/mikesmitty/docker-rtlamr-collect/commit/7bf3d17987c4a73e19707c5ffeb41a1d06337b3c))
+* **deps:** Update docker/login-action action to v4 ([#77](https://github.com/mikesmitty/docker-rtlamr-collect/issues/77)) ([5dac141](https://github.com/mikesmitty/docker-rtlamr-collect/commit/5dac14178eabb621b6019788493deadcb4a9982f))
+* **deps:** Update docker/setup-buildx-action action to v4 ([#78](https://github.com/mikesmitty/docker-rtlamr-collect/issues/78)) ([a5491b4](https://github.com/mikesmitty/docker-rtlamr-collect/commit/a5491b45e9dfa8ba55afa47041b087c44f8cc3d7))
+* **deps:** Update docker/setup-qemu-action action to v4 ([d4f794d](https://github.com/mikesmitty/docker-rtlamr-collect/commit/d4f794d484d7cf802c3f5fb0b8ee9fd754348772))
+* **deps:** Update golang Docker tag to v1.25.5 ([#73](https://github.com/mikesmitty/docker-rtlamr-collect/issues/73)) ([3043782](https://github.com/mikesmitty/docker-rtlamr-collect/commit/3043782d997fd95c4585ffdfc841f26471996abe))
+* **deps:** Update golang Docker tag to v1.26.1 ([#75](https://github.com/mikesmitty/docker-rtlamr-collect/issues/75)) ([7752893](https://github.com/mikesmitty/docker-rtlamr-collect/commit/77528933bae62333e5b468f9ce0674b48db721e8))
+* **deps:** Update golang Docker tag to v1.26.2 ([#80](https://github.com/mikesmitty/docker-rtlamr-collect/issues/80)) ([e5dd53d](https://github.com/mikesmitty/docker-rtlamr-collect/commit/e5dd53d145174c4d0348b3110aebbfe9415ba5e6))
+* **deps:** Update googleapis/release-please-action action to v5 ([#81](https://github.com/mikesmitty/docker-rtlamr-collect/issues/81)) ([c8288ca](https://github.com/mikesmitty/docker-rtlamr-collect/commit/c8288caaeebe228f844e5d7bfda0bd85e4b67df2))
+
 ## [0.1.30](https://github.com/mikesmitty/docker-rtlamr-collect/compare/v0.1.29...v0.1.30) (2025-11-09)
 
 
